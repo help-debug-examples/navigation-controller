@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        navigationController?.isNavigationBarHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,18 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @objc private func dismissViewController() {
-        dismiss(animated: true, completion: nil)
-    }
-
     @IBAction func didTapGoButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: String(describing: "Destination.storyboard"), bundle: nil)
+        let storyboard = UIStoryboard(name: String(describing: "Destination"), bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: String(describing: DestinationViewController.self))
 
-        let navigationController = UINavigationController(rootViewController: viewController)
-        let closeButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: viewController, action: #selector(dismissViewController))
-        viewController.navigationItem.leftBarButtonItem = closeButton
-        self.present(navigationController, animated: true, completion: nil)
+//        let navigationController = UINavigationController(rootViewController: viewController)
+//        let closeButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: viewController, action: #selector(DestinationViewController.dismissViewController))
+//        viewController.navigationItem.leftBarButtonItem = closeButton
+//        self.present(navigationController, animated: true, completion: nil)
+
+        navigationController?.pushViewController(viewController, animated: true)
     }
 
 }

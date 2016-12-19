@@ -12,7 +12,7 @@
         <!--Destination View Controller-->
         <scene sceneID="It6-Xq-qeT">
             <objects>
-                <viewController id="Af9-Cf-XWj" customClass="DestinationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DestinationViewController" id="Af9-Cf-XWj" customClass="DestinationViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LwL-rO-ooC"/>
                         <viewControllerLayoutGuide type="bottom" id="Hzw-Tq-ZaH"/>
@@ -31,10 +31,44 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IFq-pQ-on4">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="ILo-n8-JOP">
+                            <connections>
+                                <segue destination="ZTb-Hc-9Eo" kind="show" id="wo2-Jh-L18"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kxr-Qm-eia" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-246" y="150"/>
+        </scene>
+        <!--Final Destination View Controller-->
+        <scene sceneID="m62-Tw-koB">
+            <objects>
+                <viewController id="ZTb-Hc-9Eo" customClass="FinalDestinationViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1r0-x0-cJN"/>
+                        <viewControllerLayoutGuide type="bottom" id="E9h-Mg-JAv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7jy-l8-155">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="And this is your final destination" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7A6-uu-R3R">
+                                <rect key="frame" x="65" y="323" width="244" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZT-qw-WdH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="548" y="150"/>
         </scene>
     </scenes>
 </document>

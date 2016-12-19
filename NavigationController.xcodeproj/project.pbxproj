@@ -17,6 +17,7 @@
 		E7468C901E07365D00ADCFA2 /* NavigationControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7468C8F1E07365D00ADCFA2 /* NavigationControllerUITests.swift */; };
 		E7468C9E1E0736B200ADCFA2 /* Destination.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7468C9D1E0736B200ADCFA2 /* Destination.storyboard */; };
 		E7468CA01E07376D00ADCFA2 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7468C9F1E07376D00ADCFA2 /* DestinationViewController.swift */; };
+		E7E1028F1E07C7850067A7B5 /* FinalDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E1028E1E07C7850067A7B5 /* FinalDestinationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E7468C911E07365D00ADCFA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7468C9D1E0736B200ADCFA2 /* Destination.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Destination.storyboard; sourceTree = "<group>"; };
 		E7468C9F1E07376D00ADCFA2 /* DestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
+		E7E1028E1E07C7850067A7B5 /* FinalDestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalDestinationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				E7468C731E07365D00ADCFA2 /* NavigationController.xcdatamodeld */,
 				E7468C9D1E0736B200ADCFA2 /* Destination.storyboard */,
 				E7468C9F1E07376D00ADCFA2 /* DestinationViewController.swift */,
+				E7E1028E1E07C7850067A7B5 /* FinalDestinationViewController.swift */,
 			);
 			path = NavigationController;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				E7468C6F1E07365D00ADCFA2 /* ViewController.swift in Sources */,
 				E7468C6D1E07365D00ADCFA2 /* AppDelegate.swift in Sources */,
 				E7468CA01E07376D00ADCFA2 /* DestinationViewController.swift in Sources */,
+				E7E1028F1E07C7850067A7B5 /* FinalDestinationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +521,7 @@
 				E7468C961E07365D00ADCFA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7468C971E07365D00ADCFA2 /* Build configuration list for PBXNativeTarget "NavigationControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +530,7 @@
 				E7468C991E07365D00ADCFA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7468C9A1E07365D00ADCFA2 /* Build configuration list for PBXNativeTarget "NavigationControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +539,7 @@
 				E7468C9C1E07365D00ADCFA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
